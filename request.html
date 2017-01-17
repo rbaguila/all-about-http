@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+	</head>
+
+	<title>All About HTTP</title>
+
+	
+ 	<header id="banner" class="body">
+ 	<h1><a href="/home/user//Desktop/AGUILA-IT210-Lab1/index.html">All About HTTP </br><strong>IT 210 Laboratory Exercise Number 1</strong></a></h1>
+	<nav>
+		<ul>
+			<li><a href="/home/user//Desktop/AGUILA-IT210-Lab1/index.html">HTTP</a></li>
+			<li class="active"><a href="/home/user//Desktop/AGUILA-IT210-Lab1/request.html">HTTP Request</a></li>
+			<li><a href="/home/user//Desktop/AGUILA-IT210-Lab1/response.html">HTTP Response</a></li>
+			<li><a href="/home/user//Desktop/AGUILA-IT210-Lab1/https.html">HTTPS</a></li>
+			<li><a href="/home/user//Desktop/AGUILA-IT210-Lab1/references.html">References</a></li>
+		</ul>
+	</nav>
+	</header>
+	
+	<body>
+	
+	<section id="content" class="body">
+  	<h1>HTTP Request Header</h1>
+	  <p>
+	  	The information, in the form of a text record, that a user's browser sends to a Web server containing the details of what the browser wants and will accept back from the server.The request header also contains the type, version and capabilities of the browser that is making the request so that server returns compatible data.
+		Upon receipt of the request header, the server will return an HTTP response header to the client that is attached to the file(s) being sent.
+	  </p>
+	</section>
+
+	<section id="content" class="body">
+  	<h1>Description of Request Headers</h1>
+		<ol>
+	  		<li><p>OPTIONS - represents a request for information about the communication options available on the request/response chain identified by the Request-URI. This method allows the client to determine the options and/or requirements associated with a resource, or the capabilities of a server, without implying a resource action or initiating a resource retrieval. </p></li>
+	  		<li><p>GET - means retrieve whatever information (in the form of an entity) is identified by the Request-URI. If the Request-URI refers to a data-producing process, it is the produced data which shall be returned as the entity in the response and not the source text of the process, unless that text happens to be the output of the process. </p></li>
+	  		<li><p>HEAD - is identical to GET except that the server MUST NOT return a message-body in the response. The metainformation contained in the HTTP headers in response to a HEAD request SHOULD be identical to the information sent in response to a GET request. This method can be used for obtaining metainformation about the entity implied by the request without transferring the entity-body itself. This method is often used for testing hypertext links for validity, accessibility, and recent modification. </p></li>
+	  		<li><p>POST - is used to request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line. POST is designed to allow a uniform method to cover the following functions: 
+	  			<ul>
+	  				<li>Annotation of existing resources;</li>
+	  				<li>Posting a message to a bulletin board, newsgroup, mailing list, or similar group of articles;</li>
+	  				<li>Providing a block of data, such as the result of submitting a form, to a data-handling process;</li>
+	  				<li>Extending a database through an append operation.</li>
+	  			</ul>
+	  		</p></li>
+	  		<li><p>PUT - requests that the enclosed entity be stored under the supplied Request-URI. If the Request-URI refers to an already existing resource, the enclosed entity SHOULD be considered as a modified version of the one residing on the origin server. If the Request-URI does not point to an existing resource, and that URI is capable of being defined as a new resource by the requesting user agent, the origin server can create the resource with that URI. If a new resource is created, the origin server MUST inform the user agent via the 201 (Created) response. If an existing resource is modified, either the 200 (OK) or 204 (No Content) response codes SHOULD be sent to indicate successful completion of the request. If the resource could not be created or modified with the Request-URI, an appropriate error response SHOULD be given that reflects the nature of the problem. The recipient of the entity MUST NOT ignore any Content-* (e.g. Content-Range) headers that it does not understand or implement and MUST return a 501 (Not Implemented) response in such cases. </p></li>
+	  		<li><p>DELETE - requests that the origin server delete the resource identified by the Request-URI. This method MAY be overridden by human intervention (or other means) on the origin server. The client cannot be guaranteed that the operation has been carried out, even if the status code returned from the origin server indicates that the action has been completed successfully. However, the server SHOULD NOT indicate success unless, at the time the response is given, it intends to delete the resource or move it to an inaccessible location. </p></li>
+	  		<li><p>TRACE - is used to invoke a remote, application-layer loop- back of the request message. The final recipient of the request SHOULD reflect the message received back to the client as the entity-body of a 200 (OK) response. The final recipient is either the origin server or the first proxy or gateway to receive a Max-Forwards value of zero (0) in the request (see section 14.31). A TRACE request MUST NOT include an entity. </p></li>
+	  		<li><p>CONNECT - reserves the method name CONNECT for use with a proxy that can dynamically switch to being a tunnel (e.g. SSL tunneling) </p></li>
+		</ol>
+	</section>
+
+<!-- 
+	<figure>
+  	<img src="/home/user//Desktop/AGUILA-IT210-Lab1/images/tim_berners_lee.jpg" alt="Tim Berners-Lee" width="304" height="228">
+  		<figcaption>Tim Berners-Lee</figcaption>
+  	</figure>
+ -->
+ 	<footer id="contentinfo" class="body">
+		<p><a href="https://www.facebook.com/lancemathewmcville">Roinand B. Aguila</a>| MIT - GS, UPLB | 2014</p>
+	</footer><!-- /#contentinfo -->
+
+	</body>
+</html>
